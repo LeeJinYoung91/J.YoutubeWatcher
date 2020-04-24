@@ -8,7 +8,6 @@
 
 import Foundation
 import Alamofire
-import AlamofireImage
 
 typealias HttpsSuccess = (_ responseObject: [String:Any?]) -> Void
 typealias HttpsFailure = () -> Void
@@ -16,7 +15,7 @@ typealias HttpsParam = [String:Any]
 
 class NetworkRequest {
     func sendRequest(requestURL:String, httpMethod:HTTPMethod, param:HttpsParam, authKey:String, responseListener:HttpsSuccess?, errorListener:HttpsFailure?) -> DataRequest {
-        let dataRequest = SessionManager.default.request(requestURL, method: httpMethod, parameters: param, encoding: URLEncoding.default, headers: nil)
+        let dataRequest = Session.default.request(requestURL, method: httpMethod, parameters: param, encoding: URLEncoding.default, headers: nil)
             .validate(contentType: ["application/json"])
             .responseJSON(completionHandler: { response in
                 if response.error == nil {
