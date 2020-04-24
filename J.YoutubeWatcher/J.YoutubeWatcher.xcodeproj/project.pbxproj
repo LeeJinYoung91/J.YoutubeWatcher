@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101947E822656C9F00378EF6 /* VideoPlayerTimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101947E722656C9F00378EF6 /* VideoPlayerTimelineCell.swift */; };
+		107A1CD02270313F0051399E /* TimelineRefreshCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107A1CCF2270313F0051399E /* TimelineRefreshCell.swift */; };
 		10825F332251CA3C007D04B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10825F322251CA3C007D04B8 /* AppDelegate.swift */; };
 		10825F352251CA3C007D04B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10825F342251CA3C007D04B8 /* ViewController.swift */; };
 		10825F3A2251CA3D007D04B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10825F392251CA3D007D04B8 /* Assets.xcassets */; };
@@ -24,12 +26,14 @@
 		10825F8A2251CAC8007D04B8 /* YoutubeDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10825F712251CAC8007D04B8 /* YoutubeDAO.swift */; };
 		10825F8B2251CAC8007D04B8 /* ContentFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10825F732251CAC8007D04B8 /* ContentFetcher.swift */; };
 		10825F8C2251CAC8007D04B8 /* YoutubeVideoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10825F742251CAC8007D04B8 /* YoutubeVideoFetcher.swift */; };
-		10825F8D2251CAC8007D04B8 /* DataFetchProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10825F772251CAC8007D04B8 /* DataFetchProtocol.swift */; };
 		10825F8E2251CAC8007D04B8 /* JsonParsor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10825F792251CAC8007D04B8 /* JsonParsor.swift */; };
 		10825F8F2251CAC8007D04B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10825F7B2251CAC8007D04B8 /* Constants.swift */; };
 		10825F902251CAC8007D04B8 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10825F7E2251CAC8007D04B8 /* VideoView.swift */; };
 		10825F912251CAC8007D04B8 /* TimelineVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10825F802251CAC8007D04B8 /* TimelineVideoCell.swift */; };
 		10825F922251CAC8007D04B8 /* VideoPagerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10825F812251CAC8007D04B8 /* VideoPagerCell.swift */; };
+		10ECC4F722602DAE00AC37CF /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ECC4F622602DAE00AC37CF /* VideoPlayerViewController.swift */; };
+		10ECC4FA2260494100AC37CF /* VideoDisplayHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10ECC4F92260494100AC37CF /* VideoDisplayHeader.xib */; };
+		10ECC4FC2260495000AC37CF /* VideoDisplayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ECC4FB2260495000AC37CF /* VideoDisplayHeader.swift */; };
 		3A182B7396E2CF4A77A629DA /* Pods_J_YoutubeWatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265C113A0459102328360986 /* Pods_J_YoutubeWatcher.framework */; };
 		9DC5A0C40D560F03E9447FB0 /* Pods_J_YoutubeWatcherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EBDA83989A438E353A099B /* Pods_J_YoutubeWatcherUITests.framework */; };
 		CBD1CE9C9D2D537B6EB3CE2E /* Pods_J_YoutubeWatcherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654B13BE59909C7D2F4A8777 /* Pods_J_YoutubeWatcherTests.framework */; };
@@ -54,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		08EBDA83989A438E353A099B /* Pods_J_YoutubeWatcherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_J_YoutubeWatcherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		101947E722656C9F00378EF6 /* VideoPlayerTimelineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerTimelineCell.swift; sourceTree = "<group>"; };
+		107A1CCF2270313F0051399E /* TimelineRefreshCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineRefreshCell.swift; sourceTree = "<group>"; };
 		10825F2F2251CA3C007D04B8 /* J.YoutubeWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = J.YoutubeWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10825F322251CA3C007D04B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10825F342251CA3C007D04B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,12 +83,14 @@
 		10825F712251CAC8007D04B8 /* YoutubeDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeDAO.swift; sourceTree = "<group>"; };
 		10825F732251CAC8007D04B8 /* ContentFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentFetcher.swift; sourceTree = "<group>"; };
 		10825F742251CAC8007D04B8 /* YoutubeVideoFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeVideoFetcher.swift; sourceTree = "<group>"; };
-		10825F772251CAC8007D04B8 /* DataFetchProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFetchProtocol.swift; sourceTree = "<group>"; };
 		10825F792251CAC8007D04B8 /* JsonParsor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParsor.swift; sourceTree = "<group>"; };
 		10825F7B2251CAC8007D04B8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		10825F7E2251CAC8007D04B8 /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		10825F802251CAC8007D04B8 /* TimelineVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineVideoCell.swift; sourceTree = "<group>"; };
 		10825F812251CAC8007D04B8 /* VideoPagerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPagerCell.swift; sourceTree = "<group>"; };
+		10ECC4F622602DAE00AC37CF /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		10ECC4F92260494100AC37CF /* VideoDisplayHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoDisplayHeader.xib; sourceTree = "<group>"; };
+		10ECC4FB2260495000AC37CF /* VideoDisplayHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDisplayHeader.swift; sourceTree = "<group>"; };
 		164E870F6AAB3F3DA23C06E4 /* Pods-J.YoutubeWatcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-J.YoutubeWatcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-J.YoutubeWatcher/Pods-J.YoutubeWatcher.debug.xcconfig"; sourceTree = "<group>"; };
 		1F4FB83E5FAD094F62E3CDAA /* Pods-J.YoutubeWatcherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-J.YoutubeWatcherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-J.YoutubeWatcherUITests/Pods-J.YoutubeWatcherUITests.release.xcconfig"; sourceTree = "<group>"; };
 		265C113A0459102328360986 /* Pods_J_YoutubeWatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_J_YoutubeWatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				10825F642251CAC7007D04B8 /* TimelineViewController.swift */,
+				10ECC4F622602DAE00AC37CF /* VideoPlayerViewController.swift */,
 			);
 			path = Timeline;
 			sourceTree = "<group>";
@@ -279,7 +288,6 @@
 		10825F762251CAC8007D04B8 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				10825F772251CAC8007D04B8 /* DataFetchProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -303,6 +311,7 @@
 		10825F7C2251CAC8007D04B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				10ECC4F82260492B00AC37CF /* HeaderSection */,
 				10825F7D2251CAC8007D04B8 /* Video */,
 				10825F7F2251CAC8007D04B8 /* TableViewCell */,
 			);
@@ -322,8 +331,19 @@
 			children = (
 				10825F802251CAC8007D04B8 /* TimelineVideoCell.swift */,
 				10825F812251CAC8007D04B8 /* VideoPagerCell.swift */,
+				101947E722656C9F00378EF6 /* VideoPlayerTimelineCell.swift */,
+				107A1CCF2270313F0051399E /* TimelineRefreshCell.swift */,
 			);
 			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		10ECC4F82260492B00AC37CF /* HeaderSection */ = {
+			isa = PBXGroup;
+			children = (
+				10ECC4F92260494100AC37CF /* VideoDisplayHeader.xib */,
+				10ECC4FB2260495000AC37CF /* VideoDisplayHeader.swift */,
+			);
+			path = HeaderSection;
 			sourceTree = "<group>";
 		};
 		A74CC294F08078665F049B75 /* Frameworks */ = {
@@ -458,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10825F3D2251CA3D007D04B8 /* LaunchScreen.storyboard in Resources */,
+				10ECC4FA2260494100AC37CF /* VideoDisplayHeader.xib in Resources */,
 				10825F842251CAC8007D04B8 /* Timeline.storyboard in Resources */,
 				10825F3A2251CA3D007D04B8 /* Assets.xcassets in Resources */,
 			);
@@ -521,23 +542,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-J.YoutubeWatcher/Pods-J.YoutubeWatcher-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-J.YoutubeWatcher/Pods-J.YoutubeWatcher-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-J.YoutubeWatcher/Pods-J.YoutubeWatcher-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-J.YoutubeWatcher/Pods-J.YoutubeWatcher-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-J.YoutubeWatcher/Pods-J.YoutubeWatcher-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E0304783F700A64C7412ADF2 /* [CP] Check Pods Manifest.lock */ = {
@@ -565,19 +579,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10ECC4FC2260495000AC37CF /* VideoDisplayHeader.swift in Sources */,
 				10825F352251CA3C007D04B8 /* ViewController.swift in Sources */,
 				10825F922251CAC8007D04B8 /* VideoPagerCell.swift in Sources */,
+				101947E822656C9F00378EF6 /* VideoPlayerTimelineCell.swift in Sources */,
 				10825F832251CAC8007D04B8 /* TimelineViewController.swift in Sources */,
+				10ECC4F722602DAE00AC37CF /* VideoPlayerViewController.swift in Sources */,
 				10825F882251CAC8007D04B8 /* NetworkRequest.swift in Sources */,
 				10825F852251CAC8007D04B8 /* YoutubeVideoData.swift in Sources */,
 				10825F8E2251CAC8007D04B8 /* JsonParsor.swift in Sources */,
 				10825F8F2251CAC8007D04B8 /* Constants.swift in Sources */,
 				10825F8A2251CAC8007D04B8 /* YoutubeDAO.swift in Sources */,
+				107A1CD02270313F0051399E /* TimelineRefreshCell.swift in Sources */,
 				10825F8C2251CAC8007D04B8 /* YoutubeVideoFetcher.swift in Sources */,
 				10825F822251CAC8007D04B8 /* ChannelViewController.swift in Sources */,
 				10825F332251CA3C007D04B8 /* AppDelegate.swift in Sources */,
 				10825F862251CAC8007D04B8 /* ContentData.swift in Sources */,
-				10825F8D2251CAC8007D04B8 /* DataFetchProtocol.swift in Sources */,
 				10825F902251CAC8007D04B8 /* VideoView.swift in Sources */,
 				10825F912251CAC8007D04B8 /* TimelineVideoCell.swift in Sources */,
 				10825F8B2251CAC8007D04B8 /* ContentFetcher.swift in Sources */,
@@ -753,7 +770,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T65C7T9L22;
 				INFOPLIST_FILE = J.YoutubeWatcher/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -773,7 +790,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T65C7T9L22;
 				INFOPLIST_FILE = J.YoutubeWatcher/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

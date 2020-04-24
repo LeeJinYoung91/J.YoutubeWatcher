@@ -37,8 +37,8 @@ class YoutubeVideoData: ContentData {
         let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
         if let obj = try? encoder.encode(self) {
-            if let jsonString = String(data: obj, encoding: .utf8) {
-                print(jsonString)
+            if let _ = String(data: obj, encoding: .utf8) {
+                
             }
         }
         ContentManager.sharedInstance.addContent(id: videoId, data: self, type: .Video)

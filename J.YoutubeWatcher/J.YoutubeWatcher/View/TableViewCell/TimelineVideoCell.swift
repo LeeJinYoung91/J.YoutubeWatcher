@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Alamofire
+import AlamofireImage
 
 class TimelineVideoCell: UITableViewCell {
     @IBOutlet private var videoPlayerView: VideoView?
@@ -38,12 +39,9 @@ class TimelineVideoCell: UITableViewCell {
         videoTitleToBottomConstraints.isActive = true
         videoData = data
         videoPlayerView?.image = nil
-        Session.default.download(data.thumbnailURL)
-            .responseData(completionHandler: { response in
-                if let imageData = response.value {
-                    self.videoPlayerView?.image = UIImage(data: imageData)
-                }
-            })
+                                
+        videoPlayerView?.af_setImage(withURL: URL(string: data.thumbnailURL)!, placeholderImage: nil, filter: nil, progress: nil, progressQueue: DispatchQueue.global(), imageTransition: .noTransition, runImageTransitionIfCached: true, completion: nil)
+        
         channelLabel?.text = data.channelTitle
         videoTitleLabel.text = data.videoTitle
         let formatter = DateFormatter()

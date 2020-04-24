@@ -12,11 +12,11 @@ import UIKit
 class ContentFetcher {
     internal var savedData: [ContentData] = [ContentData]()
     internal var onLoading: Bool = false
-    private var observeViewControllers = [UIViewController]()
     internal var loadedAllDatas: Bool = false
     internal var nextPageToken: String?
+    internal var totalCount: Int = 0
 
-    func loadModel() {}
+    func loadModel(loadDataListener: (([ContentData]) -> Void)?) {}
     
     func addData(_ data: ContentData) {
         if self.savedData.contains(where: { (saveData) -> Bool in
@@ -28,16 +28,15 @@ class ContentFetcher {
     
     func onLoadFinish() {
         onLoading = false
-        for observer in observeViewControllers {
-            (observer as? (DataFetchProtocol))?.loadSuccess?()
-        }
     }
     
     func onLoadFail() {
         onLoading = false
-        for observer in observeViewControllers {
-            (observer as? (DataFetchProtocol))?.loadFailure?()
-        }
+    }
+    
+    func getModelIndex(_ data: ContentData) -> Int {
+        let index = savedData.firstIndex(where: { $0.ID == data.ID })
+        return Int(index!)
     }
     
     func getModelAt(_ index: Int) -> ContentData? {
@@ -46,18 +45,6 @@ class ContentFetcher {
         }
         
         return savedData[index]
-    }
-    
-    func bindObserver(_ observer: UIViewController) {
-        if !observeViewControllers.contains(observer) {
-            observeViewControllers.append(observer)
-        }
-    }
-    
-    func removeObserver(_ observer: UIViewController) {
-        if let index = observeViewControllers.index(of: observer) {
-            observeViewControllers.remove(at: index)
-        }
     }
     
     func clearData() {

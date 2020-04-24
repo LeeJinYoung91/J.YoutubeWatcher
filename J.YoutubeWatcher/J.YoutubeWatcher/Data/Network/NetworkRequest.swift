@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import AlamofireImage
 
 typealias HttpsSuccess = (_ responseObject: [String:Any?]) -> Void
 typealias HttpsFailure = () -> Void
@@ -15,11 +16,11 @@ typealias HttpsParam = [String:Any]
 
 class NetworkRequest {
     func sendRequest(requestURL:String, httpMethod:HTTPMethod, param:HttpsParam, authKey:String, responseListener:HttpsSuccess?, errorListener:HttpsFailure?) -> DataRequest {
-        let dataRequest = Session.default.request(requestURL, method: httpMethod, parameters: param, encoding: URLEncoding.default, headers: nil, interceptor: nil)
+        let dataRequest = SessionManager.default.request(requestURL, method: httpMethod, parameters: param, encoding: URLEncoding.default, headers: nil)
             .validate(contentType: ["application/json"])
             .responseJSON(completionHandler: { response in
                 if response.error == nil {
-                    if let responseDic = response.result.value as? [String:Any] {
+                    if let responseDic = response.value as? [String:Any] {
                         responseListener?(responseDic)
                     } else {
                         errorListener?()
@@ -30,5 +31,10 @@ class NetworkRequest {
             })
         dataRequest.resume()
         return dataRequest
+    }
+    
+    func downloadImage(_ url: String) {
+        guard let requestURL = URL(string: url) else { return }
+
     }
 }

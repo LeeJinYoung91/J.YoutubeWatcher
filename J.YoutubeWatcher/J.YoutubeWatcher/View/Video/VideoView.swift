@@ -15,8 +15,6 @@ class VideoView: UIImageView {
     private var avPlayerlayer = AVPlayerLayer()
     func didChangeValue<Value>(for keyPath: KeyPath<VideoView, Value>) {
         
-        
-        
     }
     
     func setVideoData(_ data:YoutubeVideoData) {
