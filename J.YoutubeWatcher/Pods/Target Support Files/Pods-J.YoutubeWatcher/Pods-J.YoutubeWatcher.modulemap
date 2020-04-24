@@ -1,4 +1,4 @@
-framework module Pods_J_YoutubeWatcher {
+module Pods_J_YoutubeWatcher {
   umbrella header "Pods-J.YoutubeWatcher-umbrella.h"
 
   export *

@@ -34,9 +34,9 @@
 		10ECC4F722602DAE00AC37CF /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ECC4F622602DAE00AC37CF /* VideoPlayerViewController.swift */; };
 		10ECC4FA2260494100AC37CF /* VideoDisplayHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10ECC4F92260494100AC37CF /* VideoDisplayHeader.xib */; };
 		10ECC4FC2260495000AC37CF /* VideoDisplayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ECC4FB2260495000AC37CF /* VideoDisplayHeader.swift */; };
-		3A182B7396E2CF4A77A629DA /* Pods_J_YoutubeWatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265C113A0459102328360986 /* Pods_J_YoutubeWatcher.framework */; };
-		9DC5A0C40D560F03E9447FB0 /* Pods_J_YoutubeWatcherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EBDA83989A438E353A099B /* Pods_J_YoutubeWatcherUITests.framework */; };
-		CBD1CE9C9D2D537B6EB3CE2E /* Pods_J_YoutubeWatcherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654B13BE59909C7D2F4A8777 /* Pods_J_YoutubeWatcherTests.framework */; };
+		71B69F30F50C40A71AC07D2D /* libPods-J.YoutubeWatcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D948C6AAA34B05F821157DE2 /* libPods-J.YoutubeWatcher.a */; };
+		8E58F04AFC1F9D923E45F7AA /* libPods-J.YoutubeWatcherUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9084C9F823C394A75ECBBD /* libPods-J.YoutubeWatcherUITests.a */; };
+		EBCD7E123E300438B52F81E7 /* libPods-J.YoutubeWatcherTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC38F5C613EFB3CFBA79B36 /* libPods-J.YoutubeWatcherTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08EBDA83989A438E353A099B /* Pods_J_YoutubeWatcherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_J_YoutubeWatcherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		101947E722656C9F00378EF6 /* VideoPlayerTimelineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerTimelineCell.swift; sourceTree = "<group>"; };
 		107A1CCF2270313F0051399E /* TimelineRefreshCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineRefreshCell.swift; sourceTree = "<group>"; };
 		10825F2F2251CA3C007D04B8 /* J.YoutubeWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = J.YoutubeWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,11 +92,12 @@
 		10ECC4FB2260495000AC37CF /* VideoDisplayHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDisplayHeader.swift; sourceTree = "<group>"; };
 		164E870F6AAB3F3DA23C06E4 /* Pods-J.YoutubeWatcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-J.YoutubeWatcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-J.YoutubeWatcher/Pods-J.YoutubeWatcher.debug.xcconfig"; sourceTree = "<group>"; };
 		1F4FB83E5FAD094F62E3CDAA /* Pods-J.YoutubeWatcherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-J.YoutubeWatcherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-J.YoutubeWatcherUITests/Pods-J.YoutubeWatcherUITests.release.xcconfig"; sourceTree = "<group>"; };
-		265C113A0459102328360986 /* Pods_J_YoutubeWatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_J_YoutubeWatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC38F5C613EFB3CFBA79B36 /* libPods-J.YoutubeWatcherTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-J.YoutubeWatcherTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		445099B49CEB740F77C2FEB9 /* Pods-J.YoutubeWatcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-J.YoutubeWatcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-J.YoutubeWatcher/Pods-J.YoutubeWatcher.release.xcconfig"; sourceTree = "<group>"; };
-		654B13BE59909C7D2F4A8777 /* Pods_J_YoutubeWatcherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_J_YoutubeWatcherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E831E4ADE345203A24281E /* Pods-J.YoutubeWatcherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-J.YoutubeWatcherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-J.YoutubeWatcherTests/Pods-J.YoutubeWatcherTests.release.xcconfig"; sourceTree = "<group>"; };
+		6F9084C9F823C394A75ECBBD /* libPods-J.YoutubeWatcherUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-J.YoutubeWatcherUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1981C06BB9816B2B0D2EB73 /* Pods-J.YoutubeWatcherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-J.YoutubeWatcherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-J.YoutubeWatcherUITests/Pods-J.YoutubeWatcherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D948C6AAA34B05F821157DE2 /* libPods-J.YoutubeWatcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-J.YoutubeWatcher.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E051210A3E369ACF3ABD9F0F /* Pods-J.YoutubeWatcherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-J.YoutubeWatcherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-J.YoutubeWatcherTests/Pods-J.YoutubeWatcherTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A182B7396E2CF4A77A629DA /* Pods_J_YoutubeWatcher.framework in Frameworks */,
+				71B69F30F50C40A71AC07D2D /* libPods-J.YoutubeWatcher.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD1CE9C9D2D537B6EB3CE2E /* Pods_J_YoutubeWatcherTests.framework in Frameworks */,
+				EBCD7E123E300438B52F81E7 /* libPods-J.YoutubeWatcherTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DC5A0C40D560F03E9447FB0 /* Pods_J_YoutubeWatcherUITests.framework in Frameworks */,
+				8E58F04AFC1F9D923E45F7AA /* libPods-J.YoutubeWatcherUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,9 +349,9 @@
 		A74CC294F08078665F049B75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				265C113A0459102328360986 /* Pods_J_YoutubeWatcher.framework */,
-				654B13BE59909C7D2F4A8777 /* Pods_J_YoutubeWatcherTests.framework */,
-				08EBDA83989A438E353A099B /* Pods_J_YoutubeWatcherUITests.framework */,
+				D948C6AAA34B05F821157DE2 /* libPods-J.YoutubeWatcher.a */,
+				1FC38F5C613EFB3CFBA79B36 /* libPods-J.YoutubeWatcherTests.a */,
+				6F9084C9F823C394A75ECBBD /* libPods-J.YoutubeWatcherUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -380,7 +380,7 @@
 				10825F2B2251CA3C007D04B8 /* Sources */,
 				10825F2C2251CA3C007D04B8 /* Frameworks */,
 				10825F2D2251CA3C007D04B8 /* Resources */,
-				D4BC3435B649473900D1B801 /* [CP] Embed Pods Frameworks */,
+				A609DDBA7F320CFF9DCBE28E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -519,6 +519,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A609DDBA7F320CFF9DCBE28E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-J.YoutubeWatcher/Pods-J.YoutubeWatcher-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-J.YoutubeWatcher/Pods-J.YoutubeWatcher-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-J.YoutubeWatcher/Pods-J.YoutubeWatcher-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C34301B88D023417910E94C2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -535,23 +552,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D4BC3435B649473900D1B801 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-J.YoutubeWatcher/Pods-J.YoutubeWatcher-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-J.YoutubeWatcher/Pods-J.YoutubeWatcher-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-J.YoutubeWatcher/Pods-J.YoutubeWatcher-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E0304783F700A64C7412ADF2 /* [CP] Check Pods Manifest.lock */ = {
@@ -777,7 +777,10 @@
 				);
 				INFOPLIST_FILE = J.YoutubeWatcher/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jinyoung.J-YoutubeWatcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -800,7 +803,10 @@
 				);
 				INFOPLIST_FILE = J.YoutubeWatcher/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jinyoung.J-YoutubeWatcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
